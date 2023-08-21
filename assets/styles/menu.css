@@ -1,0 +1,141 @@
+.menu{
+	position: absolute;
+	padding: 23px 24px 32px 24px;
+	width: 320px;
+	height: 100%;
+	top: 0;
+	left: 0;
+
+	display: flex;
+	flex-direction: column;
+
+	color: #1B1C21;
+
+	box-shadow: 16px 0px 52px 0px #0E185033;
+
+
+}
+
+.menu__header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu__nav-icon--close{
+	background: url("../images/burger-close.svg");
+	margin-right: 16px;
+}
+
+.menu__nav-icon--search{
+	background: url("../images/search.svg"); /*Поменять с макета*/
+	margin-left: auto;
+}
+
+.links{
+	margin-top: 50px;
+	font-family: TT Lakes;
+	font-size: 16px;
+	text-align: left;
+	font-weight: normal;
+}
+
+.menu__links-item--link{
+	display: block;
+	padding: 16px 0;
+}
+
+.menu__links-item{
+	position: relative;
+	transition: all .2s linear;
+}
+
+.menu__links-item--active{
+	color: #7E7E82;
+}
+
+.menu__links-item--active::before{
+	content: "";
+	display: inline-block;
+	width: 4px;
+	height: 32px;
+	background-color: #41F6D7;
+	position: absolute;
+	top: 8px;
+	left: -24px;
+	border-radius: 0 20px 20px 0;
+	
+}
+
+.menu__links-item:hover::before{
+	content: "";
+	display: inline-block;
+	width: 4px;
+	height: 32px;
+	background-color: #41F6D7;
+	position: absolute;
+	top: 8px;
+	left: -24px;
+	border-radius: 0 20px 20px 0;
+	
+}
+
+.menu__footer{
+	margin-top: auto;
+}
+
+.menu__footer .nav-icon{
+	margin-left: 16px;
+}
+
+.menu__footer .nav-icon:first-child{
+	margin-left: 0;
+}
+
+.menu__nav-icon--call{
+	background: url("/assets/images/call.svg");
+}
+
+.menu__nav-icon--message{
+	background: url("/assets/images/chat.svg");
+}
+
+.menu__nav-icon--profile{
+	background: url("/assets/images/profile.svg");
+}
+
+.menu__contact-info{
+	margin-top: 16px;
+}
+
+.menu__contact-info--number{
+	margin-top: 12px;
+	font-size: 24px;
+
+	font-weight: bold;
+}
+
+.langs{
+	display: flex;
+	font-weight: 500;
+}
+
+.langs > li{
+	margin-right: 7px;
+}
+
+.menu__langs{
+	margin-top: 40px;
+}
+
+.menu__lang:hover{
+	color: #7E7E82;
+}
+
+.menu__lang--active{
+	color:#7E7E82;
+}
+
+.nav-icon:hover{
+	opacity: 0.2;
+}

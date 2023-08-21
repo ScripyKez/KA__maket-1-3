@@ -5,6 +5,11 @@
 	font-family: TT Lakes;
 }
 
+html{
+	height: 100%;
+	overflow: hidden;
+}
+
 ul, a{
 	text-decoration: none;
 	list-style: none;
@@ -16,6 +21,7 @@ button{
 	border: none;
 	padding: 0;
 	font-family: TT Lakes;
+	cursor: pointer;
 }
 
 body{
@@ -41,6 +47,8 @@ body{
 .nav-icon{
 	width: 40px;
 	height: 40px;
+
+	transition: all .2s linear;
 }
 
 .nav-icon > span{
@@ -49,7 +57,7 @@ body{
 }
 
 .nav__burger{
-	background-image: url(/assets/images/burger.svg);
+	background-image: url(./assets/images/burger.svg);
 }
 
 .logo{
@@ -104,27 +112,27 @@ body{
 }
 
 .nav__repair{
-	background-image: url(/assets/images/repair.svg);
+	background-image: url(./assets/images/repair.svg);
 }
 
 .nav__search{
-	background-image: url(/assets/images/checkstatus.svg);
+	background-image: url(./assets/images/checkstatus.svg);
 }
 
 .nav__call{
-	background-image: url(/assets/images/call.svg);
+	background-image: url(./assets/images/call.svg);
 	margin-left: auto;
 	display: none;
 }
 
 .nav__chat{
-	background-image: url(/assets/images/chat.svg);
+	background-image: url(./assets/images/chat.svg);
 	margin-left: 16px;
 	display: none;
 }
 
 .nav__profile{
-	background-image: url(/assets/images/profile.svg);
+	background-image: url(./assets/images/profile.svg);
 	margin-left: 16px;
 	display: none;
 }
@@ -240,7 +248,7 @@ body{
 	display: inline-block;
 	width: 24px;
 	height: 24px;
-	background-image: url(/assets//images/expand.svg);
+	background-image: url(./assets//images/expand.svg);
 	position: absolute;
 	left: 0;
 }
