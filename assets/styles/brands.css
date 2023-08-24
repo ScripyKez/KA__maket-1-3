@@ -1,0 +1,137 @@
+.slider-header__title{
+	
+
+	text-align: left;
+	font-size: 16px;
+	color: #7e7e82;
+	text-transform: uppercase;
+
+	background: linear-gradient(90deg, #F8F8F8 1.39%, #ffffff 100%);
+
+}
+
+/* .partners__brands{
+	padding: 24px;
+	
+
+	display: grid;
+
+	grid-template-columns: repeat(auto-fill, minmax(224px, max-content));
+
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 16px 24px;
+
+	
+	height: 200px;
+
+	
+	overflow-y: hidden;
+	
+}*/ 
+
+.swiper{
+	margin-top: 32px;
+	height: 120px;
+	min-width: 300px;
+
+	position: relative;
+}
+
+.swiper::before{
+	content: "";
+	display: block;
+	width: 24px;
+	height: 80px;
+
+	background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+	position: absolute;
+	right: 0;
+	top: center;
+	z-index: 10;
+}
+
+.swiper-container{
+	background-color: #F8F8F8;
+	padding: 16px 24px;
+}
+
+.swiper-pagination-bullet{
+	height: 12px !important;
+	width: 12px !important;
+	background-color:#B5B6BC !important;
+}
+
+.swiper-pagination-bullet-active{
+	background-color:#DDDDDD !important;
+	
+
+}
+
+.card__link{
+	min-width: 224px;
+	max-width: 240px;
+	height: 72px;
+
+	border: 1px solid #EAEAEA;
+	border-radius: 5px;
+	background-color: white;
+
+	display: block
+}
+
+
+.card__link--samsung{
+	background: url("../images/brands/samsung.jpg") no-repeat 15px center, white;
+}
+
+.card__link--apple{
+	background: url("../images/brands/apple.jpg") no-repeat 15px center, white;
+}
+
+.card__link--hp{
+	background: url("../images/brands/hp.jpg") no-repeat 15px center, white;
+}
+
+.card__link--viewsonic{
+	background: url("../images/brands/viewsonic.jpg") no-repeat 15px center, white;
+}
+
+.card__link--acer{
+	background: url("../images/brands/acer.jpg") no-repeat 15px center, white;
+}
+
+.card__link--lenovo{
+	background: url("../images/brands/lenovo.jpg") no-repeat 15px center, white;
+}
+.card__link--bosch{
+	background: url("../images/brands/bosch.jpg") no-repeat 15px center, white;
+}
+
+.swiper-container__read-more{
+	display: none;
+	margin-top: 10px;
+}
+
+@media (min-width: 768px){
+	.swiper-container__read-more{
+		display: block;
+	}
+
+	.swiper-pagination{
+		display: none;
+	}
+	.swiper{
+		height: 170px;
+	}
+	.swiper-wrapper{
+		height: auto !important;
+		display: grid !important;
+		grid-template-columns: repeat(auto-fill, minmax(224px, max-content));
+		gap: 15px 24px;
+	}
+
+	.swiper-container{
+		height: auto !important;
+	}
+}
